@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MusicAPp.Dtos;
 using MusicAPp.Interfaces;
 using MusicAPp.Models;
 
@@ -18,15 +19,15 @@ namespace MusicAPp.Controllers
             _mapper = mapper;
         }
         [HttpGet]
-        public IActionResult GetSong()
+        public IActionResult GetSong(string title)
         {
-            var song = _songRepository.GetSong("happy");
+            var song = _songRepository.GetSong(title);
             return Ok(song);
         }
         [HttpPost]
-        public IActionResult AddSong(Song song)
+        public IActionResult AddSong(SongDto song)
         {
-            _songRepository.AddSong(song);
+            _songRepository.AddSong(_mapper.Map<Song>(song));
             return Ok("Success");
         }
     }

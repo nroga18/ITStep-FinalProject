@@ -1,4 +1,5 @@
-﻿using MusicAPp.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using MusicAPp.Data;
 using MusicAPp.Interfaces;
 using MusicAPp.Models;
 
@@ -29,7 +30,7 @@ namespace MusicAPp.Repositories
 
         public Album GetAlbum(int id)
         {
-            return _context.Albums.FirstOrDefault(album => album.Id == id);
+            return _context.Albums./*.Include(a => a.Artist).Include(a => a.Songs).*/FirstOrDefault(album => album.Id == id);
         }
     }
 }

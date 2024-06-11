@@ -15,7 +15,7 @@ namespace MusicAPp.Helper
             CreateMap<Album, AlbumDto>();
             CreateMap<AlbumDto, Album>();
             CreateMap<Artist, ArtistDto>();
-            CreateMap<AlbumDto, Album>();
+            CreateMap<ArtistDto, Artist>();
         }
     }
 }
