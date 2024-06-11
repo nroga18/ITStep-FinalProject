@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IT_Step\\Final\\MusicAPp\\MusicAPp\\MusicAPp.csproj": {}
+    "D:\\IT_Step\\FInal_git\\ITStep-FinalProject\\MusicAPp\\MusicAPp\\MusicAPp.csproj": {}
   },
   "projects": {
-    "D:\\IT_Step\\Final\\MusicAPp\\MusicAPp\\MusicAPp.csproj": {
+    "D:\\IT_Step\\FInal_git\\ITStep-FinalProject\\MusicAPp\\MusicAPp\\MusicAPp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT_Step\\Final\\MusicAPp\\MusicAPp\\MusicAPp.csproj",
+        "projectUniqueName": "D:\\IT_Step\\FInal_git\\ITStep-FinalProject\\MusicAPp\\MusicAPp\\MusicAPp.csproj",
         "projectName": "MusicAPp",
-        "projectPath": "D:\\IT_Step\\Final\\MusicAPp\\MusicAPp\\MusicAPp.csproj",
+        "projectPath": "D:\\IT_Step\\FInal_git\\ITStep-FinalProject\\MusicAPp\\MusicAPp\\MusicAPp.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\IT_Step\\Final\\MusicAPp\\MusicAPp\\obj\\",
+        "outputPath": "D:\\IT_Step\\FInal_git\\ITStep-FinalProject\\MusicAPp\\MusicAPp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.11, )"
